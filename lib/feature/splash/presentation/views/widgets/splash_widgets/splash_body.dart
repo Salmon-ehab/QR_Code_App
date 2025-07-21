@@ -22,7 +22,7 @@ class _SplashBodyState extends State<SplashBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: MyResponsive.height(context, 263)),
+      padding: EdgeInsets.only(top: MyResponsive.height(context, 263),right: 114,left: 114),
       child: const Center(
         child: Column(
           children: [

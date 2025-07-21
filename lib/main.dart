@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_code_app/core/constatns/app_const_fonts.dart';
 import 'package:qr_code_app/core/routes/app_router.dart';
 import 'package:qr_code_app/core/utils/app_colors.dart';
 
@@ -15,10 +16,10 @@ class MyApp extends StatelessWidget {
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: AppColors.backGround,
-        useMaterial3: true,
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          scaffoldBackgroundColor: AppColors.backGround,
+          useMaterial3: true,
+          fontFamily: AppConstFonts.appFont),
     );
   }
 }

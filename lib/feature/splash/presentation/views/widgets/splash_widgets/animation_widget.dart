@@ -14,7 +14,6 @@ class AnimationWidget extends StatelessWidget {
         SvgPicture.asset(
           SvgAssets.qrCode,
           height: MyResponsive.height(context, 150),
-          width: MyResponsive.width(context, 150),
         ),
         AnimatedBuilder(
           animation: SplashCubit.get(context).dashAnimation,
@@ -26,7 +25,6 @@ class AnimationWidget extends StatelessWidget {
           },
           child: SvgPicture.asset(
             SvgAssets.qrDash,
-            width: MyResponsive.width(context, 150),
           ),
         ),
         ScaleTransition(
@@ -34,8 +32,6 @@ class AnimationWidget extends StatelessWidget {
           child: SvgPicture.asset(
             SvgAssets.qrBorder,
             height: MyResponsive.height(context, 150),
-            width: MyResponsive.width(context, 150),
-            fit: BoxFit.fill,
           ),
         )
       ],
